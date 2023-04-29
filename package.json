@@ -1,0 +1,24 @@
+{
+  "name": "quality-backend-api-service",
+  "version": "1.0.0",
+  "description": "- Building the first API service backend for the software quality subject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quality",
+    "software",
+    "backend",
+    "api",
+    "services",
+    "controllers"
+  ],
+  "author": "Cristian Orjuela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.2.4",
+    "sequelize": "^6.31.0"
+  }
+}
