@@ -13,6 +13,9 @@ app_server.use(express.json());
 // Database connection
 const { db_connection } = require('./database/db_connection');
 
+// Routing management
+app_server.use('/api/v1/', require('./routes/index'));
+
 try {
 
   // Trying the database connection
