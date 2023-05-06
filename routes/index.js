@@ -1,19 +1,19 @@
 // Imports
 const express = require('express');
-const { Router } = require('express');
+
+// Imports controllers
+const { getListUsers, getListProducts, createUsers } = require('../controllers/index');
 
 // Initializing the router
 const router = express.Router();
 
-const callBackTemporal = (req, res) => {
-  res.json({data: 'Hola'});
-};
-
 // List of routes
-router.get('/list', callBackTemporal );
-router.get('/list-other-thing', callBackTemporal );
-router.post('/list', callBackTemporal );
-router.put('/list', callBackTemporal );
+
+// List users
+router.get('/list-users', getListUsers );
+
+// Create user
+router.post('/create-user', createUsers );
 
 // Exporting the component
 module.exports = router;
